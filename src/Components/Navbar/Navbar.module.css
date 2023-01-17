@@ -1,0 +1,69 @@
+.nav {
+  width: 100%;
+  height: 70px;
+  /* border:1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  z-index: 1000;
+  top: 0;
+}
+nav > div {
+  /* border: 1px solid green; */
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  /* border:1px solid red; */
+  font-size: 30px;
+}
+
+.left > .a {
+  color: black;
+}
+
+.right {
+  /* border:1px solid orange; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.right > .a:first-child {
+  font-size: 22px;
+  color: black;
+}
+.right > .a:first-child:after {
+  content: "";
+  display: block;
+  width: 75%;
+  border-bottom: 2px solid grey;
+}
+
+.right > .a > div {
+  width: 90%;
+  height: 35px;
+  display: flex;
+  /* border:1px solid red */
+}
+.right > .a > div > text {
+  font-size: 22px;
+  color: black;
+}
+
+sup {
+  margin-left: 2px;
+  font-weight: 600;
+}

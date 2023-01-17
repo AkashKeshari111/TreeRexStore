@@ -1,0 +1,109 @@
+main {
+  /* border:1px solid red; */
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height: auto;
+}
+h3 {
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.cartProduct {
+  border-bottom: 2px solid grey;
+  /* height: 400px; */
+  width: 30%;
+  margin-left: 10%;
+  padding: 1%;
+}
+
+.cartTotal {
+  /* border: 1px solid blue; */
+  width: 30%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  font-size: 18px;
+  padding: 1%;
+}
+
+strong {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.cartProduct > section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3%;
+  /* border: 1px solid red; */
+}
+
+.imageDiv {
+  /* border: 1px solid green; */
+  height: 70px;
+  width: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imageDiv > img {
+  height: 100%;
+  width: 90%;
+}
+
+.title {
+  /* border: 1px solid orange; */
+  height: 70px;
+  width: 70px;
+}
+
+.title > h4,
+.title > h5 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.qty {
+  /* border: 1px solid green; */
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  width: 85px;
+  height: 25px;
+}
+
+.qty > button {
+  border: none;
+
+  background-color: white;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.delete {
+  background-color: rgb(190, 18, 18);
+}
+
+.delete > button {
+  width: 85px;
+  height: 25px;
+  cursor: pointer;
+  background-color: rgb(190, 18, 18);
+  color: white;
+  border: none;
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .cartTotal,
+  .cartProduct {
+    width: 98%;
+    margin-left: 0%;
+  }
+}
